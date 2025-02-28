@@ -31,7 +31,7 @@ export class AIService {
     try {
       console.log('\n=== RunwayML API Request ===');
       console.log('Prompt:', text);
-      
+
       const response = await firstValueFrom(
         this.httpService.post<RunwayMLResponse>(`${this.API_URL}/generate`, requestBody, {
           headers: { 
@@ -45,7 +45,7 @@ export class AIService {
       console.log('✅ Video generated successfully');
       console.log('URL:', response.data.video_url);
       console.log('=== Request Complete ===\n');
-      
+
       return response.data.video_url;
     } catch (error: any) {
       console.error('\n❌ RunwayML API Error:');
