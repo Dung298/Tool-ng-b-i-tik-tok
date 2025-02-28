@@ -2,6 +2,11 @@
 
 A NestJS application that integrates with Twitter and TikTok APIs to fetch tweets and generate videos.
 
+## Legal
+
+- [Terms of Service](public/terms-of-service.md)
+- [Privacy Policy](public/privacy-policy.md)
+
 ## Features
 
 - Fetch latest tweets from Twitter
